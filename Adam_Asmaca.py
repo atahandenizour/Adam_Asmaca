@@ -2,7 +2,7 @@ name=input("Adınızı Giriniz : ")
 secret_word = input("Tahmin Edilecek Kelimeyi Giriniz : ")
 secret_word_upper=secret_word.upper()
 for item in list(range(40)):
-    print("|")
+    print(" ")
 print("Hoşgeldin "+name+ " Hadi Adam Asmaca Oynayalım.")
 
 guess_str=""
