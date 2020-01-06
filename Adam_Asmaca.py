@@ -1,3 +1,5 @@
+import time
+
 name=input("Adınızı Giriniz : ")
 secret_word = input("Tahmin Edilecek Kelimeyi Giriniz : ")
 secret_word_upper=secret_word.upper()
@@ -23,6 +25,7 @@ while lives > 0:
 
     if character_left==0:
         print(f"Cevap {secret_word_upper} Kazandiniz.")
+        time.sleep(5)
         break
 
     guess=input("Tahminini Yaz : ")
@@ -39,3 +42,4 @@ while lives > 0:
         if lives == 0:
             print("Kaybettin")
             print("Oyun Bitti")
+            time.sleep(5)
